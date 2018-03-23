@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ramirez.basketballcounter.MainActivity">
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#000"
+        android:layout_above="@id/reset"
+        android:layout_centerInParent="true"
+        android:id="@+id/view" />
+
+    <TextView
+        android:id="@+id/teamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cont2"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="28dp"
+        android:layout_toStartOf="@+id/view"
+        android:text="Team A"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/cont1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/teamA1"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="11dp"
+        android:layout_toStartOf="@+id/reset"
+        android:text="0"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/cont2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cont1"
+        android:layout_alignBottom="@+id/cont1"
+        android:layout_alignEnd="@+id/teamB"
+        android:layout_marginEnd="25dp"
+        android:text="0"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/teamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/teamA"
+        android:layout_alignBottom="@+id/teamA"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/view"
+        android:text="Team B"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/teamA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/teamA2"
+        android:layout_alignStart="@+id/teamA"
+        android:layout_marginBottom="7dp"
+        android:text="1+"
+        android:onClick="masUno"/>
+
+    <Button
+        android:id="@+id/teamA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/teamB3"
+        android:layout_alignStart="@+id/teamA1"
+        android:layout_marginBottom="11dp"
+        android:text="2+"
+        android:onClick="masDos"/>
+
+    <Button
+        android:id="@+id/teamA3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/teamA2"
+        android:layout_marginBottom="101dp"
+        android:text="3+"
+        android:onClick="masTres"/>
+
+    <Button
+        android:id="@+id/teamB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/teamA1"
+        android:layout_alignBottom="@+id/teamA1"
+        android:layout_alignStart="@+id/teamB"
+        android:text="1+"
+        android:onClick="masUno"/>
+
+    <Button
+        android:id="@+id/teamB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/teamB1"
+        android:layout_alignTop="@+id/teamA2"
+        android:text="2+"
+        android:onClick="masDos"/>
+
+    <Button
+        android:id="@+id/teamB3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/teamA3"
+        android:layout_alignBottom="@+id/teamA3"
+        android:layout_alignStart="@+id/teamB2"
+        android:layout_marginStart="1dp"
+        android:text="3+"
+        android:onClick="masTres"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:onClick="reset"
+        android:text="Reset" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:text="Power By Erika Ramirez" />
+
+</RelativeLayout>
